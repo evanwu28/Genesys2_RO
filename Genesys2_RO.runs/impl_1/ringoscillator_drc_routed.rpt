@@ -1,0 +1,197 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Wed Oct 26 13:59:16 2022
+| Host         : Vernamlab-Dev running 64-bit Ubuntu 22.04.1 LTS
+| Command      : report_drc -file ringoscillator_drc_routed.rpt -pb ringoscillator_drc_routed.pb -rpx ringoscillator_drc_routed.rpx
+| Design       : ringoscillator
+| Device       : xc7k325tffg900-2
+| Speed File   : -2
+| Design State : Fully Routed
+------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 21
++----------+----------+-----------------------------------------------------+------------+
+| Rule     | Severity | Description                                         | Violations |
++----------+----------+-----------------------------------------------------+------------+
+| CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
+| LUTLP-2  | Warning  | Combinatorial Loop Allowed                          | 20         |
++----------+----------+-----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+LUTLP-2#1 Warning
+Combinatorial Loop Allowed  
+12 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: not0/Y_INST_0, not0_i_1, not1/Y_INST_0, not10/Y_INST_0, not2/Y_INST_0,
+not3/Y_INST_0, not4/Y_INST_0, not5/Y_INST_0, not6/Y_INST_0, not7/Y_INST_0,
+not8/Y_INST_0, not9/Y_INST_0.
+Related violations: <none>
+
+LUTLP-2#2 Warning
+Combinatorial Loop Allowed  
+16 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: not0000/Y_INST_0, not0001/Y_INST_0, not00010/Y_INST_0, not00011/Y_INST_0,
+not00012/Y_INST_0, not00013/Y_INST_0, not00014/Y_INST_0, not0002/Y_INST_0,
+not0003/Y_INST_0, not0004/Y_INST_0, not0005/Y_INST_0, not0006/Y_INST_0,
+not0007/Y_INST_0, not0008/Y_INST_0, not0009/Y_INST_0
+ (the first 15 of 16 listed).
+Related violations: <none>
+
+LUTLP-2#3 Warning
+Combinatorial Loop Allowed  
+4 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: not00/Y_INST_0, not00_i_1, not01/Y_INST_0, not02/Y_INST_0.
+Related violations: <none>
+
+LUTLP-2#4 Warning
+Combinatorial Loop Allowed  
+6 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: not000/Y_INST_0, not000_i_1, not001/Y_INST_0, not002/Y_INST_0,
+not003/Y_INST_0, not004/Y_INST_0.
+Related violations: <none>
+
+LUTLP-2#5 Warning
+Combinatorial Loop Allowed  
+8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: not00000/Y_INST_0, not00000_i_1, not00001/Y_INST_0, not00002/Y_INST_0,
+not00003/Y_INST_0, not00004/Y_INST_0, not00005/Y_INST_0, not00006/Y_INST_0.
+Related violations: <none>
+
+LUTLP-2#6 Warning
+Combinatorial Loop Allowed  
+8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: not000000/Y_INST_0, not000000_i_1, not000001/Y_INST_0, not000002/Y_INST_0,
+not000003/Y_INST_0, not000004/Y_INST_0, not000005/Y_INST_0
+not000006/Y_INST_0.
+Related violations: <none>
+
+LUTLP-2#7 Warning
+Combinatorial Loop Allowed  
+8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: not0000000/Y_INST_0, not0000000_i_1, not0000001/Y_INST_0,
+not0000002/Y_INST_0, not0000003/Y_INST_0, not0000004/Y_INST_0,
+not0000005/Y_INST_0, not0000006/Y_INST_0.
+Related violations: <none>
+
+LUTLP-2#8 Warning
+Combinatorial Loop Allowed  
+8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: not00000000/Y_INST_0, not00000000_i_1, not00000001/Y_INST_0,
+not00000002/Y_INST_0, not00000003/Y_INST_0, not00000004/Y_INST_0,
+not00000005/Y_INST_0, not00000006/Y_INST_0.
+Related violations: <none>
+
+LUTLP-2#9 Warning
+Combinatorial Loop Allowed  
+8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: not000000000/Y_INST_0, not000000000_i_1, not000000001/Y_INST_0,
+not000000002/Y_INST_0, not000000003/Y_INST_0, not000000004/Y_INST_0,
+not000000005/Y_INST_0, not000000006/Y_INST_0.
+Related violations: <none>
+
+LUTLP-2#10 Warning
+Combinatorial Loop Allowed  
+8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: not0000000000/Y_INST_0, not0000000000_i_1, not0000000001/Y_INST_0,
+not0000000002/Y_INST_0, not0000000003/Y_INST_0, not0000000004/Y_INST_0,
+not0000000005/Y_INST_0, not0000000006/Y_INST_0.
+Related violations: <none>
+
+LUTLP-2#11 Warning
+Combinatorial Loop Allowed  
+8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: not00000000000/Y_INST_0, not00000000000_i_1, not00000000001/Y_INST_0,
+not00000000002/Y_INST_0, not00000000003/Y_INST_0, not00000000004/Y_INST_0,
+not00000000005/Y_INST_0, not00000000006/Y_INST_0.
+Related violations: <none>
+
+LUTLP-2#12 Warning
+Combinatorial Loop Allowed  
+8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: not000000000000/Y_INST_0, not000000000000_i_1, not000000000001/Y_INST_0,
+not000000000002/Y_INST_0, not000000000003/Y_INST_0,
+not000000000004/Y_INST_0, not000000000005/Y_INST_0
+not000000000006/Y_INST_0.
+Related violations: <none>
+
+LUTLP-2#13 Warning
+Combinatorial Loop Allowed  
+8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: not0000000000000/Y_INST_0, not0000000000000_i_1, not0000000000001/Y_INST_0,
+not0000000000002/Y_INST_0, not0000000000003/Y_INST_0,
+not0000000000004/Y_INST_0, not0000000000005/Y_INST_0
+not0000000000006/Y_INST_0.
+Related violations: <none>
+
+LUTLP-2#14 Warning
+Combinatorial Loop Allowed  
+8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: not00000000000000/Y_INST_0, not00000000000000_i_1,
+not00000000000001/Y_INST_0, not00000000000002/Y_INST_0,
+not00000000000003/Y_INST_0, not00000000000004/Y_INST_0,
+not00000000000005/Y_INST_0, not00000000000006/Y_INST_0.
+Related violations: <none>
+
+LUTLP-2#15 Warning
+Combinatorial Loop Allowed  
+8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: not000000000000000/Y_INST_0, not000000000000000_i_1,
+not000000000000001/Y_INST_0, not000000000000002/Y_INST_0,
+not000000000000003/Y_INST_0, not000000000000004/Y_INST_0,
+not000000000000005/Y_INST_0, not000000000000006/Y_INST_0.
+Related violations: <none>
+
+LUTLP-2#16 Warning
+Combinatorial Loop Allowed  
+8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: not0000000000000000/Y_INST_0, not0000000000000000_i_1,
+not0000000000000001/Y_INST_0, not0000000000000002/Y_INST_0,
+not0000000000000003/Y_INST_0, not0000000000000004/Y_INST_0,
+not0000000000000005/Y_INST_0, not0000000000000006/Y_INST_0.
+Related violations: <none>
+
+LUTLP-2#17 Warning
+Combinatorial Loop Allowed  
+8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: not00000000000000000/Y_INST_0, not00000000000000000_i_1,
+not00000000000000001/Y_INST_0, not00000000000000002/Y_INST_0,
+not00000000000000003/Y_INST_0, not00000000000000004/Y_INST_0,
+not00000000000000005/Y_INST_0, not00000000000000006/Y_INST_0.
+Related violations: <none>
+
+LUTLP-2#18 Warning
+Combinatorial Loop Allowed  
+8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: not000000000000000000/Y_INST_0, not000000000000000000_i_1,
+not000000000000000001/Y_INST_0, not000000000000000002/Y_INST_0,
+not000000000000000003/Y_INST_0, not000000000000000004/Y_INST_0,
+not000000000000000005/Y_INST_0, not000000000000000006/Y_INST_0.
+Related violations: <none>
+
+LUTLP-2#19 Warning
+Combinatorial Loop Allowed  
+8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: not0000000000000000000/Y_INST_0, not0000000000000000000_i_1,
+not0000000000000000001/Y_INST_0, not0000000000000000002/Y_INST_0,
+not0000000000000000003/Y_INST_0, not0000000000000000004/Y_INST_0,
+not0000000000000000005/Y_INST_0, not0000000000000000006/Y_INST_0.
+Related violations: <none>
+
+LUTLP-2#20 Warning
+Combinatorial Loop Allowed  
+8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: not00000000000000000000/Y_INST_0, not00000000000000000000_i_1,
+not00000000000000000001/Y_INST_0, not00000000000000000002/Y_INST_0,
+not00000000000000000003/Y_INST_0, not00000000000000000004/Y_INST_0,
+not00000000000000000005/Y_INST_0, not00000000000000000006/Y_INST_0.
+Related violations: <none>
+
+

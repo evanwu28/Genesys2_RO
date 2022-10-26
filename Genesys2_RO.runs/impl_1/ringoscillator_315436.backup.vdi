@@ -1,0 +1,549 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Oct 26 12:43:04 2022
+# Process ID: 315436
+# Current directory: /home/mitrelab/VivadoProjects/Genesys2_RO/Genesys2_RO.runs/impl_1
+# Command line: vivado -log ringoscillator.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ringoscillator.tcl -notrace
+# Log file: /home/mitrelab/VivadoProjects/Genesys2_RO/Genesys2_RO.runs/impl_1/ringoscillator.vdi
+# Journal file: /home/mitrelab/VivadoProjects/Genesys2_RO/Genesys2_RO.runs/impl_1/vivado.jou
+# Running On: Vernamlab-Dev, OS: Linux, CPU Frequency: 3000.000 MHz, CPU Physical cores: 18, Host memory: 540518 MB
+#-----------------------------------------------------------
+source ringoscillator.tcl -notrace
+Command: link_design -top ringoscillator -part xc7k325tffg900-2
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2099.391 ; gain = 0.000 ; free physical = 369656 ; free virtual = 500144
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/mitrelab/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/constrs_1/new/Genesys2_Master.xdc]
+Finished Parsing XDC File [/home/mitrelab/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/constrs_1/new/Genesys2_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2201.859 ; gain = 0.000 ; free physical = 369550 ; free virtual = 500038
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+5 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k325t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00.8 ; elapsed = 00:00:00.51 . Memory (MB): peak = 2301.645 ; gain = 87.812 ; free physical = 369542 ; free virtual = 500030
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: e1dfd350
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2803.676 ; gain = 502.031 ; free physical = 369120 ; free virtual = 499608
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: e1dfd350
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3082.566 ; gain = 0.000 ; free physical = 368878 ; free virtual = 499366
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: e1dfd350
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3082.566 ; gain = 0.000 ; free physical = 368878 ; free virtual = 499366
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: e1dfd350
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3082.566 ; gain = 0.000 ; free physical = 368878 ; free virtual = 499366
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: e1dfd350
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3114.582 ; gain = 32.016 ; free physical = 368878 ; free virtual = 499366
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: e1dfd350
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3114.582 ; gain = 32.016 ; free physical = 368878 ; free virtual = 499366
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: e1dfd350
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3114.582 ; gain = 32.016 ; free physical = 368878 ; free virtual = 499366
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3114.582 ; gain = 0.000 ; free physical = 368878 ; free virtual = 499366
+Ending Logic Optimization Task | Checksum: e1dfd350
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3114.582 ; gain = 32.016 ; free physical = 368878 ; free virtual = 499366
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: e1dfd350
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3114.582 ; gain = 0.000 ; free physical = 368878 ; free virtual = 499366
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: e1dfd350
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3114.582 ; gain = 0.000 ; free physical = 368878 ; free virtual = 499366
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3114.582 ; gain = 0.000 ; free physical = 368878 ; free virtual = 499366
+Ending Netlist Obfuscation Task | Checksum: e1dfd350
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3114.582 ; gain = 0.000 ; free physical = 368878 ; free virtual = 499366
+INFO: [Common 17-83] Releasing license: Implementation
+22 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3114.582 ; gain = 908.754 ; free physical = 368878 ; free virtual = 499366
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3138.594 ; gain = 16.008 ; free physical = 368873 ; free virtual = 499362
+INFO: [Common 17-1381] The checkpoint '/home/mitrelab/VivadoProjects/Genesys2_RO/Genesys2_RO.runs/impl_1/ringoscillator_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file ringoscillator_drc_opted.rpt -pb ringoscillator_drc_opted.pb -rpx ringoscillator_drc_opted.rpx
+Command: report_drc -file ringoscillator_drc_opted.rpt -pb ringoscillator_drc_opted.pb -rpx ringoscillator_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/mitrelab/VivadoProjects/Genesys2_RO/Genesys2_RO.runs/impl_1/ringoscillator_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+CRITICAL WARNING: [DRC LUTLP-1] Combinatorial Loop Alert: 8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is not0000000/Y. Please evaluate your design. The cells in the loop are: not0000000/Y_INST_0, not0000001/Y_INST_0, not0000002/Y_INST_0, not0000003/Y_INST_0, not0000004/Y_INST_0, not0000005/Y_INST_0, not0000006/Y_INST_0, and not0000000_i_1.
+CRITICAL WARNING: [DRC LUTLP-1] Combinatorial Loop Alert: 8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is not00000000/Y. Please evaluate your design. The cells in the loop are: not00000000/Y_INST_0, not00000001/Y_INST_0, not00000002/Y_INST_0, not00000003/Y_INST_0, not00000004/Y_INST_0, not00000005/Y_INST_0, not00000006/Y_INST_0, and not00000000_i_1.
+CRITICAL WARNING: [DRC LUTLP-1] Combinatorial Loop Alert: 8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is not000000000/Y. Please evaluate your design. The cells in the loop are: not000000000/Y_INST_0, not000000001/Y_INST_0, not000000002/Y_INST_0, not000000003/Y_INST_0, not000000004/Y_INST_0, not000000005/Y_INST_0, not000000006/Y_INST_0, and not000000000_i_1.
+CRITICAL WARNING: [DRC LUTLP-1] Combinatorial Loop Alert: 8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is not0000000000/Y. Please evaluate your design. The cells in the loop are: not0000000000/Y_INST_0, not0000000001/Y_INST_0, not0000000002/Y_INST_0, not0000000003/Y_INST_0, not0000000004/Y_INST_0, not0000000005/Y_INST_0, not0000000006/Y_INST_0, and not0000000000_i_1.
+CRITICAL WARNING: [DRC LUTLP-1] Combinatorial Loop Alert: 8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is not00000000000/Y. Please evaluate your design. The cells in the loop are: not00000000000/Y_INST_0, not00000000001/Y_INST_0, not00000000002/Y_INST_0, not00000000003/Y_INST_0, not00000000004/Y_INST_0, not00000000005/Y_INST_0, not00000000006/Y_INST_0, and not00000000000_i_1.
+CRITICAL WARNING: [DRC LUTLP-1] Combinatorial Loop Alert: 8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is not000000000000/Y. Please evaluate your design. The cells in the loop are: not000000000000/Y_INST_0, not000000000001/Y_INST_0, not000000000002/Y_INST_0, not000000000003/Y_INST_0, not000000000004/Y_INST_0, not000000000005/Y_INST_0, not000000000006/Y_INST_0, and not000000000000_i_1.
+CRITICAL WARNING: [DRC LUTLP-1] Combinatorial Loop Alert: 8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is not0000000000000/Y. Please evaluate your design. The cells in the loop are: not0000000000000/Y_INST_0, not0000000000001/Y_INST_0, not0000000000002/Y_INST_0, not0000000000003/Y_INST_0, not0000000000004/Y_INST_0, not0000000000005/Y_INST_0, not0000000000006/Y_INST_0, and not0000000000000_i_1.
+CRITICAL WARNING: [DRC LUTLP-1] Combinatorial Loop Alert: 8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is not00000000000000/Y. Please evaluate your design. The cells in the loop are: not00000000000000/Y_INST_0, not00000000000001/Y_INST_0, not00000000000002/Y_INST_0, not00000000000003/Y_INST_0, not00000000000004/Y_INST_0, not00000000000005/Y_INST_0, not00000000000006/Y_INST_0, and not00000000000000_i_1.
+CRITICAL WARNING: [DRC LUTLP-1] Combinatorial Loop Alert: 8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is not000000000000000/Y. Please evaluate your design. The cells in the loop are: not000000000000000/Y_INST_0, not000000000000001/Y_INST_0, not000000000000002/Y_INST_0, not000000000000003/Y_INST_0, not000000000000004/Y_INST_0, not000000000000005/Y_INST_0, not000000000000006/Y_INST_0, and not000000000000000_i_1.
+CRITICAL WARNING: [DRC LUTLP-1] Combinatorial Loop Alert: 8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is not0000000000000000/Y. Please evaluate your design. The cells in the loop are: not0000000000000000/Y_INST_0, not0000000000000001/Y_INST_0, not0000000000000002/Y_INST_0, not0000000000000003/Y_INST_0, not0000000000000004/Y_INST_0, not0000000000000005/Y_INST_0, not0000000000000006/Y_INST_0, and not0000000000000000_i_1.
+CRITICAL WARNING: [DRC LUTLP-1] Combinatorial Loop Alert: 8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is not00000000000000000/Y. Please evaluate your design. The cells in the loop are: not00000000000000000/Y_INST_0, not00000000000000001/Y_INST_0, not00000000000000002/Y_INST_0, not00000000000000003/Y_INST_0, not00000000000000004/Y_INST_0, not00000000000000005/Y_INST_0, not00000000000000006/Y_INST_0, and not00000000000000000_i_1.
+CRITICAL WARNING: [DRC LUTLP-1] Combinatorial Loop Alert: 8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is not000000000000000000/Y. Please evaluate your design. The cells in the loop are: not000000000000000000/Y_INST_0, not000000000000000001/Y_INST_0, not000000000000000002/Y_INST_0, not000000000000000003/Y_INST_0, not000000000000000004/Y_INST_0, not000000000000000005/Y_INST_0, not000000000000000006/Y_INST_0, and not000000000000000000_i_1.
+CRITICAL WARNING: [DRC LUTLP-1] Combinatorial Loop Alert: 8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is not0000000000000000000/Y. Please evaluate your design. The cells in the loop are: not0000000000000000000/Y_INST_0, not0000000000000000001/Y_INST_0, not0000000000000000002/Y_INST_0, not0000000000000000003/Y_INST_0, not0000000000000000004/Y_INST_0, not0000000000000000005/Y_INST_0, not0000000000000000006/Y_INST_0, and not0000000000000000000_i_1.
+CRITICAL WARNING: [DRC LUTLP-1] Combinatorial Loop Alert: 8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is not00000000000000000000/Y. Please evaluate your design. The cells in the loop are: not00000000000000000000/Y_INST_0, not00000000000000000001/Y_INST_0, not00000000000000000002/Y_INST_0, not00000000000000000003/Y_INST_0, not00000000000000000004/Y_INST_0, not00000000000000000005/Y_INST_0, not00000000000000000006/Y_INST_0, and not00000000000000000000_i_1.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 14 Critical Warnings, 6 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3266.656 ; gain = 0.000 ; free physical = 368820 ; free virtual = 499308
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 59c2a52a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3266.656 ; gain = 0.000 ; free physical = 368820 ; free virtual = 499308
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3266.656 ; gain = 0.000 ; free physical = 368820 ; free virtual = 499308
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+WARNING: [Place 30-87] Partially locked IO Bus is found. Following components of the IO Bus led are not locked:  'led[7]'  'led[6]'  'led[1]' 
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 10d713d96
+
+Time (s): cpu = 00:00:00.5 ; elapsed = 00:00:00.26 . Memory (MB): peak = 3266.656 ; gain = 0.000 ; free physical = 368806 ; free virtual = 499295
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 14644ad1e
+
+Time (s): cpu = 00:00:00.55 ; elapsed = 00:00:00.28 . Memory (MB): peak = 3266.656 ; gain = 0.000 ; free physical = 368806 ; free virtual = 499295
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 14644ad1e
+
+Time (s): cpu = 00:00:00.56 ; elapsed = 00:00:00.29 . Memory (MB): peak = 3266.656 ; gain = 0.000 ; free physical = 368806 ; free virtual = 499295
+Phase 1 Placer Initialization | Checksum: 14644ad1e
+
+Time (s): cpu = 00:00:00.57 ; elapsed = 00:00:00.3 . Memory (MB): peak = 3266.656 ; gain = 0.000 ; free physical = 368806 ; free virtual = 499295
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 14644ad1e
+
+Time (s): cpu = 00:00:00.57 ; elapsed = 00:00:00.3 . Memory (MB): peak = 3266.656 ; gain = 0.000 ; free physical = 368804 ; free virtual = 499292
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 14644ad1e
+
+Time (s): cpu = 00:00:00.57 ; elapsed = 00:00:00.3 . Memory (MB): peak = 3266.656 ; gain = 0.000 ; free physical = 368804 ; free virtual = 499292
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 14644ad1e
+
+Time (s): cpu = 00:00:00.57 ; elapsed = 00:00:00.3 . Memory (MB): peak = 3266.656 ; gain = 0.000 ; free physical = 368804 ; free virtual = 499292
+
+Phase 2.4 Global Placement Core
+WARNING: [Place 46-29] Timing had been disabled during Placer and, therefore, physical synthesis in Placer will be skipped.
+Phase 2.4 Global Placement Core | Checksum: 175571d43
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.51 . Memory (MB): peak = 3266.656 ; gain = 0.000 ; free physical = 368697 ; free virtual = 499185
+Phase 2 Global Placement | Checksum: 175571d43
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.51 . Memory (MB): peak = 3266.656 ; gain = 0.000 ; free physical = 368697 ; free virtual = 499185
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 175571d43
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.52 . Memory (MB): peak = 3266.656 ; gain = 0.000 ; free physical = 368697 ; free virtual = 499185
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1e46d8e74
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.54 . Memory (MB): peak = 3266.656 ; gain = 0.000 ; free physical = 368696 ; free virtual = 499184
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 158620150
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.55 . Memory (MB): peak = 3266.656 ; gain = 0.000 ; free physical = 368696 ; free virtual = 499184
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 158620150
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.55 . Memory (MB): peak = 3266.656 ; gain = 0.000 ; free physical = 368696 ; free virtual = 499184
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 1ca1b85d2
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.87 . Memory (MB): peak = 3266.656 ; gain = 0.000 ; free physical = 368682 ; free virtual = 499170
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 1ca1b85d2
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.87 . Memory (MB): peak = 3266.656 ; gain = 0.000 ; free physical = 368682 ; free virtual = 499170
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 1ca1b85d2
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.88 . Memory (MB): peak = 3266.656 ; gain = 0.000 ; free physical = 368682 ; free virtual = 499170
+Phase 3 Detail Placement | Checksum: 1ca1b85d2
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.88 . Memory (MB): peak = 3266.656 ; gain = 0.000 ; free physical = 368682 ; free virtual = 499170
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+Phase 4.1 Post Commit Optimization | Checksum: 1ca1b85d2
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.98 . Memory (MB): peak = 3266.656 ; gain = 0.000 ; free physical = 368682 ; free virtual = 499170
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1ca1b85d2
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.99 . Memory (MB): peak = 3266.656 ; gain = 0.000 ; free physical = 368685 ; free virtual = 499174
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                1x1|
+|___________|___________________|___________________|
+|      South|                1x1|                1x1|
+|___________|___________________|___________________|
+|       East|                1x1|                1x1|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 1ca1b85d2
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.99 . Memory (MB): peak = 3266.656 ; gain = 0.000 ; free physical = 368685 ; free virtual = 499174
+Phase 4.3 Placer Reporting | Checksum: 1ca1b85d2
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.99 . Memory (MB): peak = 3266.656 ; gain = 0.000 ; free physical = 368685 ; free virtual = 499174
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3266.656 ; gain = 0.000 ; free physical = 368685 ; free virtual = 499174
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.99 . Memory (MB): peak = 3266.656 ; gain = 0.000 ; free physical = 368685 ; free virtual = 499174
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1ca1b85d2
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.99 . Memory (MB): peak = 3266.656 ; gain = 0.000 ; free physical = 368685 ; free virtual = 499174
+Ending Placer Task | Checksum: cb1203d9
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.99 . Memory (MB): peak = 3266.656 ; gain = 0.000 ; free physical = 368685 ; free virtual = 499174
+INFO: [Common 17-83] Releasing license: Implementation
+41 Infos, 2 Warnings, 14 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3266.656 ; gain = 0.000 ; free physical = 368764 ; free virtual = 499252
+INFO: [Common 17-1381] The checkpoint '/home/mitrelab/VivadoProjects/Genesys2_RO/Genesys2_RO.runs/impl_1/ringoscillator_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file ringoscillator_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.23 . Memory (MB): peak = 3266.656 ; gain = 0.000 ; free physical = 368740 ; free virtual = 499228
+INFO: [runtcl-4] Executing : report_utilization -file ringoscillator_utilization_placed.rpt -pb ringoscillator_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file ringoscillator_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.09 . Memory (MB): peak = 3266.656 ; gain = 0.000 ; free physical = 368745 ; free virtual = 499233
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k325t'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3266.656 ; gain = 0.000 ; free physical = 368730 ; free virtual = 499218
+INFO: [Vivado_Tcl 4-235] No timing constraint found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+49 Infos, 2 Warnings, 14 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3266.656 ; gain = 0.000 ; free physical = 368726 ; free virtual = 499215
+INFO: [Common 17-1381] The checkpoint '/home/mitrelab/VivadoProjects/Genesys2_RO/Genesys2_RO.runs/impl_1/ringoscillator_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k325t'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+CRITICAL WARNING: [DRC LUTLP-1] Combinatorial Loop Alert: 8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is not0000000/Y. Please evaluate your design. The cells in the loop are: not0000000/Y_INST_0, not0000001/Y_INST_0, not0000002/Y_INST_0, not0000003/Y_INST_0, not0000004/Y_INST_0, not0000005/Y_INST_0, not0000006/Y_INST_0, and not0000000_i_1.
+CRITICAL WARNING: [DRC LUTLP-1] Combinatorial Loop Alert: 8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is not00000000/Y. Please evaluate your design. The cells in the loop are: not00000000/Y_INST_0, not00000001/Y_INST_0, not00000002/Y_INST_0, not00000003/Y_INST_0, not00000004/Y_INST_0, not00000005/Y_INST_0, not00000006/Y_INST_0, and not00000000_i_1.
+CRITICAL WARNING: [DRC LUTLP-1] Combinatorial Loop Alert: 8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is not000000000/Y. Please evaluate your design. The cells in the loop are: not000000000/Y_INST_0, not000000001/Y_INST_0, not000000002/Y_INST_0, not000000003/Y_INST_0, not000000004/Y_INST_0, not000000005/Y_INST_0, not000000006/Y_INST_0, and not000000000_i_1.
+CRITICAL WARNING: [DRC LUTLP-1] Combinatorial Loop Alert: 8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is not0000000000/Y. Please evaluate your design. The cells in the loop are: not0000000000/Y_INST_0, not0000000001/Y_INST_0, not0000000002/Y_INST_0, not0000000003/Y_INST_0, not0000000004/Y_INST_0, not0000000005/Y_INST_0, not0000000006/Y_INST_0, and not0000000000_i_1.
+CRITICAL WARNING: [DRC LUTLP-1] Combinatorial Loop Alert: 8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is not00000000000/Y. Please evaluate your design. The cells in the loop are: not00000000000/Y_INST_0, not00000000001/Y_INST_0, not00000000002/Y_INST_0, not00000000003/Y_INST_0, not00000000004/Y_INST_0, not00000000005/Y_INST_0, not00000000006/Y_INST_0, and not00000000000_i_1.
+CRITICAL WARNING: [DRC LUTLP-1] Combinatorial Loop Alert: 8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is not000000000000/Y. Please evaluate your design. The cells in the loop are: not000000000000/Y_INST_0, not000000000001/Y_INST_0, not000000000002/Y_INST_0, not000000000003/Y_INST_0, not000000000004/Y_INST_0, not000000000005/Y_INST_0, not000000000006/Y_INST_0, and not000000000000_i_1.
+CRITICAL WARNING: [DRC LUTLP-1] Combinatorial Loop Alert: 8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is not0000000000000/Y. Please evaluate your design. The cells in the loop are: not0000000000000/Y_INST_0, not0000000000001/Y_INST_0, not0000000000002/Y_INST_0, not0000000000003/Y_INST_0, not0000000000004/Y_INST_0, not0000000000005/Y_INST_0, not0000000000006/Y_INST_0, and not0000000000000_i_1.
+CRITICAL WARNING: [DRC LUTLP-1] Combinatorial Loop Alert: 8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is not00000000000000/Y. Please evaluate your design. The cells in the loop are: not00000000000000/Y_INST_0, not00000000000001/Y_INST_0, not00000000000002/Y_INST_0, not00000000000003/Y_INST_0, not00000000000004/Y_INST_0, not00000000000005/Y_INST_0, not00000000000006/Y_INST_0, and not00000000000000_i_1.
+CRITICAL WARNING: [DRC LUTLP-1] Combinatorial Loop Alert: 8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is not000000000000000/Y. Please evaluate your design. The cells in the loop are: not000000000000000/Y_INST_0, not000000000000001/Y_INST_0, not000000000000002/Y_INST_0, not000000000000003/Y_INST_0, not000000000000004/Y_INST_0, not000000000000005/Y_INST_0, not000000000000006/Y_INST_0, and not000000000000000_i_1.
+CRITICAL WARNING: [DRC LUTLP-1] Combinatorial Loop Alert: 8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is not0000000000000000/Y. Please evaluate your design. The cells in the loop are: not0000000000000000/Y_INST_0, not0000000000000001/Y_INST_0, not0000000000000002/Y_INST_0, not0000000000000003/Y_INST_0, not0000000000000004/Y_INST_0, not0000000000000005/Y_INST_0, not0000000000000006/Y_INST_0, and not0000000000000000_i_1.
+CRITICAL WARNING: [DRC LUTLP-1] Combinatorial Loop Alert: 8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is not00000000000000000/Y. Please evaluate your design. The cells in the loop are: not00000000000000000/Y_INST_0, not00000000000000001/Y_INST_0, not00000000000000002/Y_INST_0, not00000000000000003/Y_INST_0, not00000000000000004/Y_INST_0, not00000000000000005/Y_INST_0, not00000000000000006/Y_INST_0, and not00000000000000000_i_1.
+CRITICAL WARNING: [DRC LUTLP-1] Combinatorial Loop Alert: 8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is not000000000000000000/Y. Please evaluate your design. The cells in the loop are: not000000000000000000/Y_INST_0, not000000000000000001/Y_INST_0, not000000000000000002/Y_INST_0, not000000000000000003/Y_INST_0, not000000000000000004/Y_INST_0, not000000000000000005/Y_INST_0, not000000000000000006/Y_INST_0, and not000000000000000000_i_1.
+CRITICAL WARNING: [DRC LUTLP-1] Combinatorial Loop Alert: 8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is not0000000000000000000/Y. Please evaluate your design. The cells in the loop are: not0000000000000000000/Y_INST_0, not0000000000000000001/Y_INST_0, not0000000000000000002/Y_INST_0, not0000000000000000003/Y_INST_0, not0000000000000000004/Y_INST_0, not0000000000000000005/Y_INST_0, not0000000000000000006/Y_INST_0, and not0000000000000000000_i_1.
+CRITICAL WARNING: [DRC LUTLP-1] Combinatorial Loop Alert: 8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is not00000000000000000000/Y. Please evaluate your design. The cells in the loop are: not00000000000000000000/Y_INST_0, not00000000000000000001/Y_INST_0, not00000000000000000002/Y_INST_0, not00000000000000000003/Y_INST_0, not00000000000000000004/Y_INST_0, not00000000000000000005/Y_INST_0, not00000000000000000006/Y_INST_0, and not00000000000000000000_i_1.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 14 Critical Warnings, 7 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 89c22be5 ConstDB: 0 ShapeSum: 414fd7f4 RouteDB: 0
+Post Restoration Checksum: NetGraph: e61eb525 NumContArr: de8d9960 Constraints: 0 Timing: 0
+Phase 1 Build RT Design | Checksum: 1c4ac4e85
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:19 . Memory (MB): peak = 3479.660 ; gain = 206.941 ; free physical = 368467 ; free virtual = 498956
+
+Phase 2 Router Initialization
+INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 1c4ac4e85
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:19 . Memory (MB): peak = 3518.660 ; gain = 245.941 ; free physical = 368433 ; free virtual = 498922
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 1c4ac4e85
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:19 . Memory (MB): peak = 3518.660 ; gain = 245.941 ; free physical = 368433 ; free virtual = 498922
+ Number of Nodes with overlaps = 0
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 171
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 171
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 1783697f9
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:20 . Memory (MB): peak = 3562.770 ; gain = 290.051 ; free physical = 368415 ; free virtual = 498904
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 1783697f9
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:20 . Memory (MB): peak = 3562.770 ; gain = 290.051 ; free physical = 368415 ; free virtual = 498904
+Phase 3 Initial Routing | Checksum: d3e9df4e
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:20 . Memory (MB): peak = 3562.770 ; gain = 290.051 ; free physical = 368414 ; free virtual = 498903
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 0
+Phase 4.1 Global Iteration 0 | Checksum: 7c4d8acd
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:20 . Memory (MB): peak = 3562.770 ; gain = 290.051 ; free physical = 368414 ; free virtual = 498903
+Phase 4 Rip-up And Reroute | Checksum: 7c4d8acd
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:20 . Memory (MB): peak = 3562.770 ; gain = 290.051 ; free physical = 368414 ; free virtual = 498903
+
+Phase 5 Delay and Skew Optimization
+Phase 5 Delay and Skew Optimization | Checksum: 7c4d8acd
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:20 . Memory (MB): peak = 3562.770 ; gain = 290.051 ; free physical = 368414 ; free virtual = 498903
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+Phase 6.1 Hold Fix Iter | Checksum: 7c4d8acd
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:20 . Memory (MB): peak = 3562.770 ; gain = 290.051 ; free physical = 368414 ; free virtual = 498903
+Phase 6 Post Hold Fix | Checksum: 7c4d8acd
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:20 . Memory (MB): peak = 3562.770 ; gain = 290.051 ; free physical = 368414 ; free virtual = 498903
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.0918068 %
+  Global Horizontal Routing Utilization  = 0.0355952 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 28.8288%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 16.2162%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 19.1176%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 17.6471%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: 7c4d8acd
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:20 . Memory (MB): peak = 3562.770 ; gain = 290.051 ; free physical = 368414 ; free virtual = 498903
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 7c4d8acd
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:20 . Memory (MB): peak = 3562.770 ; gain = 290.051 ; free physical = 368411 ; free virtual = 498900
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: c6ff9ef4
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:20 . Memory (MB): peak = 3578.777 ; gain = 306.059 ; free physical = 368411 ; free virtual = 498900
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:20 . Memory (MB): peak = 3578.777 ; gain = 306.059 ; free physical = 368468 ; free virtual = 498957
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+59 Infos, 2 Warnings, 28 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:20 . Memory (MB): peak = 3578.777 ; gain = 312.121 ; free physical = 368468 ; free virtual = 498957
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3578.777 ; gain = 0.000 ; free physical = 368467 ; free virtual = 498957
+INFO: [Common 17-1381] The checkpoint '/home/mitrelab/VivadoProjects/Genesys2_RO/Genesys2_RO.runs/impl_1/ringoscillator_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file ringoscillator_drc_routed.rpt -pb ringoscillator_drc_routed.pb -rpx ringoscillator_drc_routed.rpx
+Command: report_drc -file ringoscillator_drc_routed.rpt -pb ringoscillator_drc_routed.pb -rpx ringoscillator_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/mitrelab/VivadoProjects/Genesys2_RO/Genesys2_RO.runs/impl_1/ringoscillator_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file ringoscillator_methodology_drc_routed.rpt -pb ringoscillator_methodology_drc_routed.pb -rpx ringoscillator_methodology_drc_routed.rpx
+Command: report_methodology -file ringoscillator_methodology_drc_routed.rpt -pb ringoscillator_methodology_drc_routed.pb -rpx ringoscillator_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file /home/mitrelab/VivadoProjects/Genesys2_RO/Genesys2_RO.runs/impl_1/ringoscillator_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file ringoscillator_power_routed.rpt -pb ringoscillator_power_summary_routed.pb -rpx ringoscillator_power_routed.rpx
+Command: report_power -file ringoscillator_power_routed.rpt -pb ringoscillator_power_summary_routed.pb -rpx ringoscillator_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Power 33-232] No user defined clocks were found in the design! Power estimation will be inaccurate until this is corrected.
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+71 Infos, 3 Warnings, 28 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file ringoscillator_route_status.rpt -pb ringoscillator_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file ringoscillator_timing_summary_routed.rpt -pb ringoscillator_timing_summary_routed.pb -rpx ringoscillator_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file ringoscillator_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file ringoscillator_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file ringoscillator_bus_skew_routed.rpt -pb ringoscillator_bus_skew_routed.pb -rpx ringoscillator_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 26 12:43:50 2022...

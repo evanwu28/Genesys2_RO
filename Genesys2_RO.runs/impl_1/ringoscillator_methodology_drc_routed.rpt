@@ -1,0 +1,135 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Wed Oct 26 13:59:16 2022
+| Host         : Vernamlab-Dev running 64-bit Ubuntu 22.04.1 LTS
+| Command      : report_methodology -file ringoscillator_methodology_drc_routed.rpt -pb ringoscillator_methodology_drc_routed.pb -rpx ringoscillator_methodology_drc_routed.rpx
+| Design       : ringoscillator
+| Device       : xc7k325tffg900-2
+| Speed File   : -2
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 20
++-----------+----------+--------------------------+------------+
+| Rule      | Severity | Description              | Violations |
++-----------+----------+--------------------------+------------+
+| TIMING-23 | Warning  | Combinational loop found | 20         |
++-----------+----------+--------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-23#1 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between not00000000000000000000_i_1/I0 and not00000000000000000000_i_1/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#2 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between not0000000000000000000_i_1/I0 and not0000000000000000000_i_1/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#3 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between not000000000000000000_i_1/I0 and not000000000000000000_i_1/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#4 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between not00000000000000000_i_1/I0 and not00000000000000000_i_1/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#5 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between not0000000000000000_i_1/I0 and not0000000000000000_i_1/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#6 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between not000000000000000_i_1/I0 and not000000000000000_i_1/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#7 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between not00000000000000_i_1/I0 and not00000000000000_i_1/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#8 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between not0000000000000_i_1/I0 and not0000000000000_i_1/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#9 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between not000000000000_i_1/I0 and not000000000000_i_1/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#10 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between not00000000000_i_1/I0 and not00000000000_i_1/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#11 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between not0000000000_i_1/I0 and not0000000000_i_1/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#12 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between not000000000_i_1/I0 and not000000000_i_1/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#13 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between not00000000_i_1/I0 and not00000000_i_1/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#14 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between not0000000_i_1/I0 and not0000000_i_1/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#15 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between not000000_i_1/I0 and not000000_i_1/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#16 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between not00000_i_1/I0 and not00000_i_1/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#17 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between not0000_i_1/I0 and not0000_i_1/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#18 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between not000_i_1/I0 and not000_i_1/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#19 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between not00_i_1/I0 and not00_i_1/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#20 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between not0_i_1/I0 and not0_i_1/O to disable the timing loop
+Related violations: <none>
+
+
