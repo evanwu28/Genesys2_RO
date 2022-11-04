@@ -22,10 +22,11 @@
 
 module ringoscillator(
     
-    output [6:2] led,
-//    input clk,
-//    input reset,
-//    output[3:0] counter,
+    output [7:2] led,
+    input clk_n,
+    input clk_p,
+    input reset,
+    output reg[3:0] counter,
     input wire R_in,
     input wire R_in1,
     input wire R_in2,
@@ -55,7 +56,6 @@ module ringoscillator(
                      
     );
     
-    //reg [3:0] counter_up;
     wire a;
     wire b;
     wire a1;
@@ -63,16 +63,30 @@ module ringoscillator(
     wire a2;
     wire b2;
     wire a3;
-    wire b3;
+    wire b3;    
+    wire clk;
     
-//    always @(posedge clk or posedge reset)
-//    begin
-//    if (reset)
-//        counter_up <= 4'd0;
-//    else
-//    counter_up <= counter_up + 4'd1;
-//    end
-//    assign counter = counter_up;  
+    //Differential Clock Buffer to create 200 Mhz Clock
+    IBUFGDS #(
+        .DIFF_TERM   ("FALSE"),
+        .IBUF_LOW_PWR("TRUE" ),
+        .IOSTANDARD  ("LVDS" )
+    ) get_clk (
+        .O(clk   ),
+        .I(clk_p ),
+        .IB(clk_n)
+    );
+        
+    assign led[7] = clk;
+    
+    (* dont_touch= "true" *)   
+    always @(posedge clk)
+    begin
+    if (! reset)
+        counter <= 4'd0;
+    else
+    counter <= counter + 4'd1;
+    end
     
     
     // 11 gate Ring Oscillator at Bottom Left Slice

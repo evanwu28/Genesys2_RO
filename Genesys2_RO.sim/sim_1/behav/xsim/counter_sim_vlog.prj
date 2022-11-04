@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Genesys2_RO.srcs/sources_1/new/notgate.v" \
+"../../../../Genesys2_RO.srcs/sources_1/new/ringoscillator.v" \
+"../../../../Genesys2_RO.srcs/sim_1/new/counter_sim.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

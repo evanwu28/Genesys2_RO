@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "/home/mitrelab/VivadoProjects/Genesys2_RO/Genesys2_RO.runs/impl_1/ringoscillator.tcl"
+  variable script "/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.runs/impl_1/ringoscillator.tcl"
   variable category "vivado_impl"
 }
 
@@ -126,7 +126,7 @@ set rc [catch {
   set_param xicom.use_bs_reader 1
   set_param chipscope.maxJobs 9
   open_checkpoint ringoscillator_routed.dcp
-  set_property webtalk.parent_dir /home/mitrelab/VivadoProjects/Genesys2_RO/Genesys2_RO.cache/wt [current_project]
+  set_property webtalk.parent_dir /home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.cache/wt [current_project]
 set_property TOP ringoscillator [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }

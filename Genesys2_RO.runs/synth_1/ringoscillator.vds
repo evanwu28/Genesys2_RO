@@ -2,107 +2,123 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Wed Oct 26 13:57:31 2022
-# Process ID: 341633
-# Current directory: /home/mitrelab/VivadoProjects/Genesys2_RO/Genesys2_RO.runs/synth_1
+# Start of session at: Fri Nov  4 13:35:01 2022
+# Process ID: 2982985
+# Current directory: /home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.runs/synth_1
 # Command line: vivado -log ringoscillator.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ringoscillator.tcl
-# Log file: /home/mitrelab/VivadoProjects/Genesys2_RO/Genesys2_RO.runs/synth_1/ringoscillator.vds
-# Journal file: /home/mitrelab/VivadoProjects/Genesys2_RO/Genesys2_RO.runs/synth_1/vivado.jou
+# Log file: /home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.runs/synth_1/ringoscillator.vds
+# Journal file: /home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.runs/synth_1/vivado.jou
 # Running On: Vernamlab-Dev, OS: Linux, CPU Frequency: 3000.000 MHz, CPU Physical cores: 18, Host memory: 540518 MB
 #-----------------------------------------------------------
 source ringoscillator.tcl -notrace
-Command: read_checkpoint -auto_incremental -incremental /home/mitrelab/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/utils_1/imports/synth_1/ringoscillator.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from /home/mitrelab/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/utils_1/imports/synth_1/ringoscillator.dcp for incremental synthesis
+Command: read_checkpoint -auto_incremental -incremental /home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/utils_1/imports/synth_1/ringoscillator.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/utils_1/imports/synth_1/ringoscillator.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top ringoscillator -part xc7k325tffg900-2 -no_lc
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-86] Your Synthesis license expires in 25 day(s)
 INFO: [Device 21-403] Loading part xc7k325tffg900-2
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 341667
+INFO: [Synth 8-7075] Helper process launched with PID 2983023
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2480.648 ; gain = 373.738 ; free physical = 368391 ; free virtual = 499068
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1828.211; parent = 1637.511; children = 190.700
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3479.062; parent = 2480.652; children = 998.410
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2478.652 ; gain = 373.738 ; free physical = 308135 ; free virtual = 445337
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1824.130; parent = 1634.285; children = 189.845
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3477.062; parent = 2478.656; children = 998.406
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'ringoscillator' [/home/mitrelab/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:23]
-INFO: [Synth 8-6157] synthesizing module 'notgate' [/home/mitrelab/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'notgate' (0#1) [/home/mitrelab/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'ringoscillator' (0#1) [/home/mitrelab/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ringoscillator' [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IBUFGDS' [/tools/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:71834]
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: LVDS - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFGDS' (0#1) [/tools/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:71834]
+INFO: [Synth 8-6157] synthesizing module 'notgate' [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'notgate' (0#1) [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ringoscillator' (0#1) [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:23]
 WARNING: [Synth 8-7129] Port R_in5 in module ringoscillator is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2555.617 ; gain = 448.707 ; free physical = 368475 ; free virtual = 499153
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1828.211; parent = 1637.511; children = 190.700
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3554.031; parent = 2555.621; children = 998.410
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2545.621 ; gain = 440.707 ; free physical = 308217 ; free virtual = 445420
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1824.130; parent = 1634.285; children = 189.845
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3544.031; parent = 2545.625; children = 998.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2573.430 ; gain = 466.520 ; free physical = 368474 ; free virtual = 499152
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1828.211; parent = 1637.511; children = 190.700
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3571.844; parent = 2573.434; children = 998.410
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2568.465 ; gain = 463.551 ; free physical = 308217 ; free virtual = 445420
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1824.130; parent = 1634.285; children = 189.845
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3566.875; parent = 2568.469; children = 998.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2573.430 ; gain = 466.520 ; free physical = 368474 ; free virtual = 499152
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1828.211; parent = 1637.511; children = 190.700
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3571.844; parent = 2573.434; children = 998.410
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2568.465 ; gain = 463.551 ; free physical = 308217 ; free virtual = 445420
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1824.130; parent = 1634.285; children = 189.845
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3566.875; parent = 2568.469; children = 998.406
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2573.430 ; gain = 0.000 ; free physical = 368474 ; free virtual = 499152
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2571.434 ; gain = 0.000 ; free physical = 308212 ; free virtual = 445415
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/mitrelab/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/constrs_1/new/Genesys2_Master.xdc]
-Finished Parsing XDC File [/home/mitrelab/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/constrs_1/new/Genesys2_Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/mitrelab/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/constrs_1/new/Genesys2_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ringoscillator_propImpl.xdc].
+Parsing XDC File [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/constrs_1/new/Genesys2_Master.xdc]
+WARNING: [Vivado 12-507] No nets matched 'clk_IBUF'. [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/constrs_1/new/Genesys2_Master.xdc:257]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/constrs_1/new/Genesys2_Master.xdc:257]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/constrs_1/new/Genesys2_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/constrs_1/new/Genesys2_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ringoscillator_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/ringoscillator_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2733.180 ; gain = 0.000 ; free physical = 368391 ; free virtual = 499068
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2732.215 ; gain = 0.000 ; free physical = 308133 ; free virtual = 445335
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 1 instances were transformed.
+  IBUFGDS => IBUFDS: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2733.180 ; gain = 0.000 ; free physical = 368391 ; free virtual = 499068
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2732.215 ; gain = 0.000 ; free physical = 308133 ; free virtual = 445335
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2733.180 ; gain = 626.270 ; free physical = 368444 ; free virtual = 499122
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1828.211; parent = 1637.511; children = 190.700
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3699.578; parent = 2701.168; children = 998.410
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2732.215 ; gain = 627.301 ; free physical = 308185 ; free virtual = 445387
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1824.130; parent = 1634.285; children = 189.845
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3698.609; parent = 2700.203; children = 998.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k325tffg900-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2733.180 ; gain = 626.270 ; free physical = 368444 ; free virtual = 499122
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1828.211; parent = 1637.511; children = 190.700
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3699.578; parent = 2701.168; children = 998.410
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2732.215 ; gain = 627.301 ; free physical = 308185 ; free virtual = 445387
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1824.130; parent = 1634.285; children = 189.845
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3698.609; parent = 2700.203; children = 998.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2733.180 ; gain = 626.270 ; free physical = 368444 ; free virtual = 499122
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1828.211; parent = 1637.511; children = 190.700
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3699.578; parent = 2701.168; children = 998.410
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2732.215 ; gain = 627.301 ; free physical = 308185 ; free virtual = 445387
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1824.130; parent = 1634.285; children = 189.845
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3698.609; parent = 2700.203; children = 998.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2733.180 ; gain = 626.270 ; free physical = 368443 ; free virtual = 499122
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1828.211; parent = 1637.511; children = 190.700
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3699.578; parent = 2701.168; children = 998.410
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2732.215 ; gain = 627.301 ; free physical = 308185 ; free virtual = 445388
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1824.130; parent = 1634.285; children = 189.845
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3698.609; parent = 2700.203; children = 998.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -121,33 +137,1215 @@ Start Cross Boundary and Area Optimization
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 WARNING: [Synth 8-7129] Port R_in5 in module ringoscillator is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2733.180 ; gain = 626.270 ; free physical = 368429 ; free virtual = 499111
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1828.211; parent = 1637.511; children = 190.700
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3699.578; parent = 2701.168; children = 998.410
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2732.215 ; gain = 627.301 ; free physical = 308172 ; free virtual = 445378
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1824.130; parent = 1634.285; children = 189.845
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3698.609; parent = 2700.203; children = 998.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2733.180 ; gain = 626.270 ; free physical = 368322 ; free virtual = 499004
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1910.164; parent = 1720.020; children = 190.700
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3699.578; parent = 2701.168; children = 998.410
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2732.215 ; gain = 627.301 ; free physical = 308059 ; free virtual = 445266
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1901.641; parent = 1712.297; children = 189.845
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3698.609; parent = 2700.203; children = 998.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2733.180 ; gain = 626.270 ; free physical = 368322 ; free virtual = 499004
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1910.246; parent = 1720.102; children = 190.700
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3699.578; parent = 2701.168; children = 998.410
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2732.215 ; gain = 627.301 ; free physical = 308050 ; free virtual = 445257
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1901.770; parent = 1712.436; children = 189.845
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3698.609; parent = 2700.203; children = 998.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+      : not10/Y
+      : not10/X
+      : not9/Y
+      : not9/X
+      : not8/Y
+      : not8/X
+      : not7/Y
+      : not7/X
+      : not6/Y
+      : not6/X
+      : not5/Y
+      : not5/X
+      : not4/Y
+      : not4/X
+      : not3/Y
+      : not3/X
+      : not2/Y
+      : not2/X
+      : not1/Y
+      : not1/X
+      : not0/Y
+      : not0/X
+      : not02/Y
+      : not02/X
+      : not01/Y
+      : not01/X
+      : not00/Y
+      : not00/X
+      : not004/Y
+      : not004/X
+      : not003/Y
+      : not003/X
+      : not002/Y
+      : not002/X
+      : not001/Y
+      : not001/X
+      : not000/Y
+      : not000/X
+      : not00014/Y
+      : not00014/X
+      : not00013/Y
+      : not00013/X
+      : not00012/Y
+      : not00012/X
+      : not00011/Y
+      : not00011/X
+      : not00010/Y
+      : not00010/X
+      : not0009/Y
+      : not0009/X
+      : not0008/Y
+      : not0008/X
+      : not0007/Y
+      : not0007/X
+      : not0006/Y
+      : not0006/X
+      : not0005/Y
+      : not0005/X
+      : not0004/Y
+      : not0004/X
+      : not0003/Y
+      : not0003/X
+      : not0002/Y
+      : not0002/X
+      : not0001/Y
+      : not0001/X
+      : not0000/Y
+      : not0000/X
+      : not00006/Y
+      : not00006/X
+      : not00005/Y
+      : not00005/X
+      : not00004/Y
+      : not00004/X
+      : not00003/Y
+      : not00003/X
+      : not00002/Y
+      : not00002/X
+      : not00001/Y
+      : not00001/X
+      : not00000/Y
+      : not00000/X
+      : not000006/Y
+      : not000006/X
+      : not000005/Y
+      : not000005/X
+      : not000004/Y
+      : not000004/X
+      : not000003/Y
+      : not000003/X
+      : not000002/Y
+      : not000002/X
+      : not000001/Y
+      : not000001/X
+      : not000000/Y
+      : not000000/X
+      : not0000006/Y
+      : not0000006/X
+      : not0000005/Y
+      : not0000005/X
+      : not0000004/Y
+      : not0000004/X
+      : not0000003/Y
+      : not0000003/X
+      : not0000002/Y
+      : not0000002/X
+      : not0000001/Y
+      : not0000001/X
+      : not0000000/Y
+      : not0000000/X
+      : not00000006/Y
+      : not00000006/X
+      : not00000005/Y
+      : not00000005/X
+      : not00000004/Y
+      : not00000004/X
+      : not00000003/Y
+      : not00000003/X
+      : not00000002/Y
+      : not00000002/X
+      : not00000001/Y
+      : not00000001/X
+      : not00000000/Y
+      : not00000000/X
+      : not000000006/Y
+      : not000000006/X
+      : not000000005/Y
+      : not000000005/X
+      : not000000004/Y
+      : not000000004/X
+      : not000000003/Y
+      : not000000003/X
+      : not000000002/Y
+      : not000000002/X
+      : not000000001/Y
+      : not000000001/X
+      : not000000000/Y
+      : not000000000/X
+      : not0000000006/Y
+      : not0000000006/X
+      : not0000000005/Y
+      : not0000000005/X
+      : not0000000004/Y
+      : not0000000004/X
+      : not0000000003/Y
+      : not0000000003/X
+      : not0000000002/Y
+      : not0000000002/X
+      : not0000000001/Y
+      : not0000000001/X
+      : not0000000000/Y
+      : not0000000000/X
+      : not00000000006/Y
+      : not00000000006/X
+      : not00000000005/Y
+      : not00000000005/X
+      : not00000000004/Y
+      : not00000000004/X
+      : not00000000003/Y
+      : not00000000003/X
+      : not00000000002/Y
+      : not00000000002/X
+      : not00000000001/Y
+      : not00000000001/X
+      : not00000000000/Y
+      : not00000000000/X
+      : not000000000006/Y
+      : not000000000006/X
+      : not000000000005/Y
+      : not000000000005/X
+      : not000000000004/Y
+      : not000000000004/X
+      : not000000000003/Y
+      : not000000000003/X
+      : not000000000002/Y
+      : not000000000002/X
+      : not000000000001/Y
+      : not000000000001/X
+      : not000000000000/Y
+      : not000000000000/X
+      : not0000000000006/Y
+      : not0000000000006/X
+      : not0000000000005/Y
+      : not0000000000005/X
+      : not0000000000004/Y
+      : not0000000000004/X
+      : not0000000000003/Y
+      : not0000000000003/X
+      : not0000000000002/Y
+      : not0000000000002/X
+      : not0000000000001/Y
+      : not0000000000001/X
+      : not0000000000000/Y
+      : not0000000000000/X
+      : not00000000000006/Y
+      : not00000000000006/X
+      : not00000000000005/Y
+      : not00000000000005/X
+      : not00000000000004/Y
+      : not00000000000004/X
+      : not00000000000003/Y
+      : not00000000000003/X
+      : not00000000000002/Y
+      : not00000000000002/X
+      : not00000000000001/Y
+      : not00000000000001/X
+      : not00000000000000/Y
+      : not00000000000000/X
+      : not000000000000006/Y
+      : not000000000000006/X
+      : not000000000000005/Y
+      : not000000000000005/X
+      : not000000000000004/Y
+      : not000000000000004/X
+      : not000000000000003/Y
+      : not000000000000003/X
+      : not000000000000002/Y
+      : not000000000000002/X
+      : not000000000000001/Y
+      : not000000000000001/X
+      : not000000000000000/Y
+      : not000000000000000/X
+      : not0000000000000006/Y
+      : not0000000000000006/X
+      : not0000000000000005/Y
+      : not0000000000000005/X
+      : not0000000000000004/Y
+      : not0000000000000004/X
+      : not0000000000000003/Y
+      : not0000000000000003/X
+      : not0000000000000002/Y
+      : not0000000000000002/X
+      : not0000000000000001/Y
+      : not0000000000000001/X
+      : not0000000000000000/Y
+      : not0000000000000000/X
+      : not00000000000000006/Y
+      : not00000000000000006/X
+      : not00000000000000005/Y
+      : not00000000000000005/X
+      : not00000000000000004/Y
+      : not00000000000000004/X
+      : not00000000000000003/Y
+      : not00000000000000003/X
+      : not00000000000000002/Y
+      : not00000000000000002/X
+      : not00000000000000001/Y
+      : not00000000000000001/X
+      : not00000000000000000/Y
+      : not00000000000000000/X
+      : not000000000000000006/Y
+      : not000000000000000006/X
+      : not000000000000000005/Y
+      : not000000000000000005/X
+      : not000000000000000004/Y
+      : not000000000000000004/X
+      : not000000000000000003/Y
+      : not000000000000000003/X
+      : not000000000000000002/Y
+      : not000000000000000002/X
+      : not000000000000000001/Y
+      : not000000000000000001/X
+      : not000000000000000000/Y
+      : not000000000000000000/X
+      : not0000000000000000006/Y
+      : not0000000000000000006/X
+      : not0000000000000000005/Y
+      : not0000000000000000005/X
+      : not0000000000000000004/Y
+      : not0000000000000000004/X
+      : not0000000000000000003/Y
+      : not0000000000000000003/X
+      : not0000000000000000002/Y
+      : not0000000000000000002/X
+      : not0000000000000000001/Y
+      : not0000000000000000001/X
+      : not0000000000000000000/Y
+      : not0000000000000000000/X
+      : not00000000000000000006/Y
+      : not00000000000000000006/X
+      : not00000000000000000005/Y
+      : not00000000000000000005/X
+      : not00000000000000000004/Y
+      : not00000000000000000004/X
+      : not00000000000000000003/Y
+      : not00000000000000000003/X
+      : not00000000000000000002/Y
+      : not00000000000000000002/X
+      : not00000000000000000001/Y
+      : not00000000000000000001/X
+      : not00000000000000000000/Y
+      : not00000000000000000000/X
+Found timing loop:
+     0: i_23/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:94]
+     1: i_23/I0 (LUT2)
+      : not10/Y
+     2: not10/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     3: not10/i_0/I0 (LUT1)
+      : not10/X
+      : not9/Y
+     4: not9/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     5: not9/i_0/I0 (LUT1)
+      : not9/X
+      : not8/Y
+     6: not8/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     7: not8/i_0/I0 (LUT1)
+      : not8/X
+      : not7/Y
+     8: not7/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     9: not7/i_0/I0 (LUT1)
+      : not7/X
+      : not6/Y
+    10: not6/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    11: not6/i_0/I0 (LUT1)
+      : not6/X
+      : not5/Y
+    12: not5/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    13: not5/i_0/I0 (LUT1)
+      : not5/X
+      : not4/Y
+    14: not4/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    15: not4/i_0/I0 (LUT1)
+      : not4/X
+      : not3/Y
+    16: not3/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    17: not3/i_0/I0 (LUT1)
+      : not3/X
+      : not2/Y
+    18: not2/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    19: not2/i_0/I0 (LUT1)
+      : not2/X
+      : not1/Y
+    20: not1/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    21: not1/i_0/I0 (LUT1)
+      : not1/X
+      : not0/Y
+    22: not0/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    23: not0/i_0/I0 (LUT1)
+      : not0/X
+    24: i_23/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:94]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_23"
+Found timing loop:
+     0: i_21/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:172]
+     1: i_21/I0 (LUT2)
+      : not02/Y
+     2: not02/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     3: not02/i_0/I0 (LUT1)
+      : not02/X
+      : not01/Y
+     4: not01/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     5: not01/i_0/I0 (LUT1)
+      : not01/X
+      : not00/Y
+     6: not00/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     7: not00/i_0/I0 (LUT1)
+      : not00/X
+     8: i_21/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:172]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_21"
+Found timing loop:
+     0: i_22/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:248]
+     1: i_22/I0 (LUT2)
+      : not004/Y
+     2: not004/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     3: not004/i_0/I0 (LUT1)
+      : not004/X
+      : not003/Y
+     4: not003/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     5: not003/i_0/I0 (LUT1)
+      : not003/X
+      : not002/Y
+     6: not002/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     7: not002/i_0/I0 (LUT1)
+      : not002/X
+      : not001/Y
+     8: not001/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     9: not001/i_0/I0 (LUT1)
+      : not001/X
+      : not000/Y
+    10: not000/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    11: not000/i_0/I0 (LUT1)
+      : not000/X
+    12: i_22/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:248]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_22"
+Found timing loop:
+     0: i_24/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:288]
+     1: i_24/I0 (LUT2)
+      : not00014/Y
+     2: not00014/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     3: not00014/i_0/I0 (LUT1)
+      : not00014/X
+      : not00013/Y
+     4: not00013/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     5: not00013/i_0/I0 (LUT1)
+      : not00013/X
+      : not00012/Y
+     6: not00012/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     7: not00012/i_0/I0 (LUT1)
+      : not00012/X
+      : not00011/Y
+     8: not00011/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     9: not00011/i_0/I0 (LUT1)
+      : not00011/X
+      : not00010/Y
+    10: not00010/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    11: not00010/i_0/I0 (LUT1)
+      : not00010/X
+      : not0009/Y
+    12: not0009/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    13: not0009/i_0/I0 (LUT1)
+      : not0009/X
+      : not0008/Y
+    14: not0008/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    15: not0008/i_0/I0 (LUT1)
+      : not0008/X
+      : not0007/Y
+    16: not0007/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    17: not0007/i_0/I0 (LUT1)
+      : not0007/X
+      : not0006/Y
+    18: not0006/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    19: not0006/i_0/I0 (LUT1)
+      : not0006/X
+      : not0005/Y
+    20: not0005/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    21: not0005/i_0/I0 (LUT1)
+      : not0005/X
+      : not0004/Y
+    22: not0004/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    23: not0004/i_0/I0 (LUT1)
+      : not0004/X
+      : not0003/Y
+    24: not0003/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    25: not0003/i_0/I0 (LUT1)
+      : not0003/X
+      : not0002/Y
+    26: not0002/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    27: not0002/i_0/I0 (LUT1)
+      : not0002/X
+      : not0001/Y
+    28: not0001/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    29: not0001/i_0/I0 (LUT1)
+      : not0001/X
+      : not0000/Y
+    30: not0000/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    31: not0000/i_0/I0 (LUT1)
+      : not0000/X
+    32: i_24/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:288]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_24"
+Found timing loop:
+     0: i_0/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:395]
+     1: i_0/I0 (LUT2)
+      : not00006/Y
+     2: not00006/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     3: not00006/i_0/I0 (LUT1)
+      : not00006/X
+      : not00005/Y
+     4: not00005/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     5: not00005/i_0/I0 (LUT1)
+      : not00005/X
+      : not00004/Y
+     6: not00004/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     7: not00004/i_0/I0 (LUT1)
+      : not00004/X
+      : not00003/Y
+     8: not00003/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     9: not00003/i_0/I0 (LUT1)
+      : not00003/X
+      : not00002/Y
+    10: not00002/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    11: not00002/i_0/I0 (LUT1)
+      : not00002/X
+      : not00001/Y
+    12: not00001/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    13: not00001/i_0/I0 (LUT1)
+      : not00001/X
+      : not00000/Y
+    14: not00000/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    15: not00000/i_0/I0 (LUT1)
+      : not00000/X
+    16: i_0/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:395]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_0"
+Found timing loop:
+     0: i_1/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:452]
+     1: i_1/I0 (LUT2)
+      : not000006/Y
+     2: not000006/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     3: not000006/i_0/I0 (LUT1)
+      : not000006/X
+      : not000005/Y
+     4: not000005/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     5: not000005/i_0/I0 (LUT1)
+      : not000005/X
+      : not000004/Y
+     6: not000004/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     7: not000004/i_0/I0 (LUT1)
+      : not000004/X
+      : not000003/Y
+     8: not000003/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     9: not000003/i_0/I0 (LUT1)
+      : not000003/X
+      : not000002/Y
+    10: not000002/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    11: not000002/i_0/I0 (LUT1)
+      : not000002/X
+      : not000001/Y
+    12: not000001/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    13: not000001/i_0/I0 (LUT1)
+      : not000001/X
+      : not000000/Y
+    14: not000000/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    15: not000000/i_0/I0 (LUT1)
+      : not000000/X
+    16: i_1/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:452]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1"
+Found timing loop:
+     0: i_2/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:509]
+     1: i_2/I0 (LUT2)
+      : not0000006/Y
+     2: not0000006/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     3: not0000006/i_0/I0 (LUT1)
+      : not0000006/X
+      : not0000005/Y
+     4: not0000005/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     5: not0000005/i_0/I0 (LUT1)
+      : not0000005/X
+      : not0000004/Y
+     6: not0000004/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     7: not0000004/i_0/I0 (LUT1)
+      : not0000004/X
+      : not0000003/Y
+     8: not0000003/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     9: not0000003/i_0/I0 (LUT1)
+      : not0000003/X
+      : not0000002/Y
+    10: not0000002/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    11: not0000002/i_0/I0 (LUT1)
+      : not0000002/X
+      : not0000001/Y
+    12: not0000001/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    13: not0000001/i_0/I0 (LUT1)
+      : not0000001/X
+      : not0000000/Y
+    14: not0000000/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    15: not0000000/i_0/I0 (LUT1)
+      : not0000000/X
+    16: i_2/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:509]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_2"
+Found timing loop:
+     0: i_3/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:566]
+     1: i_3/I0 (LUT2)
+      : not00000006/Y
+     2: not00000006/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     3: not00000006/i_0/I0 (LUT1)
+      : not00000006/X
+      : not00000005/Y
+     4: not00000005/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     5: not00000005/i_0/I0 (LUT1)
+      : not00000005/X
+      : not00000004/Y
+     6: not00000004/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     7: not00000004/i_0/I0 (LUT1)
+      : not00000004/X
+      : not00000003/Y
+     8: not00000003/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     9: not00000003/i_0/I0 (LUT1)
+      : not00000003/X
+      : not00000002/Y
+    10: not00000002/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    11: not00000002/i_0/I0 (LUT1)
+      : not00000002/X
+      : not00000001/Y
+    12: not00000001/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    13: not00000001/i_0/I0 (LUT1)
+      : not00000001/X
+      : not00000000/Y
+    14: not00000000/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    15: not00000000/i_0/I0 (LUT1)
+      : not00000000/X
+    16: i_3/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:566]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_3"
+Found timing loop:
+     0: i_4/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:622]
+     1: i_4/I0 (LUT2)
+      : not000000006/Y
+     2: not000000006/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     3: not000000006/i_0/I0 (LUT1)
+      : not000000006/X
+      : not000000005/Y
+     4: not000000005/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     5: not000000005/i_0/I0 (LUT1)
+      : not000000005/X
+      : not000000004/Y
+     6: not000000004/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     7: not000000004/i_0/I0 (LUT1)
+      : not000000004/X
+      : not000000003/Y
+     8: not000000003/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     9: not000000003/i_0/I0 (LUT1)
+      : not000000003/X
+      : not000000002/Y
+    10: not000000002/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    11: not000000002/i_0/I0 (LUT1)
+      : not000000002/X
+      : not000000001/Y
+    12: not000000001/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    13: not000000001/i_0/I0 (LUT1)
+      : not000000001/X
+      : not000000000/Y
+    14: not000000000/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    15: not000000000/i_0/I0 (LUT1)
+      : not000000000/X
+    16: i_4/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:622]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_4"
+Found timing loop:
+     0: i_5/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:679]
+     1: i_5/I0 (LUT2)
+      : not0000000006/Y
+     2: not0000000006/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     3: not0000000006/i_0/I0 (LUT1)
+      : not0000000006/X
+      : not0000000005/Y
+     4: not0000000005/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     5: not0000000005/i_0/I0 (LUT1)
+      : not0000000005/X
+      : not0000000004/Y
+     6: not0000000004/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     7: not0000000004/i_0/I0 (LUT1)
+      : not0000000004/X
+      : not0000000003/Y
+     8: not0000000003/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     9: not0000000003/i_0/I0 (LUT1)
+      : not0000000003/X
+      : not0000000002/Y
+    10: not0000000002/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    11: not0000000002/i_0/I0 (LUT1)
+      : not0000000002/X
+      : not0000000001/Y
+    12: not0000000001/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    13: not0000000001/i_0/I0 (LUT1)
+      : not0000000001/X
+      : not0000000000/Y
+    14: not0000000000/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    15: not0000000000/i_0/I0 (LUT1)
+      : not0000000000/X
+    16: i_5/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:679]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_5"
+Found timing loop:
+     0: i_6/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:736]
+     1: i_6/I0 (LUT2)
+      : not00000000006/Y
+     2: not00000000006/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     3: not00000000006/i_0/I0 (LUT1)
+      : not00000000006/X
+      : not00000000005/Y
+     4: not00000000005/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     5: not00000000005/i_0/I0 (LUT1)
+      : not00000000005/X
+      : not00000000004/Y
+     6: not00000000004/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     7: not00000000004/i_0/I0 (LUT1)
+      : not00000000004/X
+      : not00000000003/Y
+     8: not00000000003/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     9: not00000000003/i_0/I0 (LUT1)
+      : not00000000003/X
+      : not00000000002/Y
+    10: not00000000002/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    11: not00000000002/i_0/I0 (LUT1)
+      : not00000000002/X
+      : not00000000001/Y
+    12: not00000000001/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    13: not00000000001/i_0/I0 (LUT1)
+      : not00000000001/X
+      : not00000000000/Y
+    14: not00000000000/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    15: not00000000000/i_0/I0 (LUT1)
+      : not00000000000/X
+    16: i_6/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:736]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_6"
+Found timing loop:
+     0: i_7/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:793]
+     1: i_7/I0 (LUT2)
+      : not000000000006/Y
+     2: not000000000006/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     3: not000000000006/i_0/I0 (LUT1)
+      : not000000000006/X
+      : not000000000005/Y
+     4: not000000000005/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     5: not000000000005/i_0/I0 (LUT1)
+      : not000000000005/X
+      : not000000000004/Y
+     6: not000000000004/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     7: not000000000004/i_0/I0 (LUT1)
+      : not000000000004/X
+      : not000000000003/Y
+     8: not000000000003/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     9: not000000000003/i_0/I0 (LUT1)
+      : not000000000003/X
+      : not000000000002/Y
+    10: not000000000002/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    11: not000000000002/i_0/I0 (LUT1)
+      : not000000000002/X
+      : not000000000001/Y
+    12: not000000000001/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    13: not000000000001/i_0/I0 (LUT1)
+      : not000000000001/X
+      : not000000000000/Y
+    14: not000000000000/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    15: not000000000000/i_0/I0 (LUT1)
+      : not000000000000/X
+    16: i_7/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:793]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_7"
+Found timing loop:
+     0: i_8/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:850]
+     1: i_8/I0 (LUT2)
+      : not0000000000006/Y
+     2: not0000000000006/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     3: not0000000000006/i_0/I0 (LUT1)
+      : not0000000000006/X
+      : not0000000000005/Y
+     4: not0000000000005/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     5: not0000000000005/i_0/I0 (LUT1)
+      : not0000000000005/X
+      : not0000000000004/Y
+     6: not0000000000004/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     7: not0000000000004/i_0/I0 (LUT1)
+      : not0000000000004/X
+      : not0000000000003/Y
+     8: not0000000000003/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     9: not0000000000003/i_0/I0 (LUT1)
+      : not0000000000003/X
+      : not0000000000002/Y
+    10: not0000000000002/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    11: not0000000000002/i_0/I0 (LUT1)
+      : not0000000000002/X
+      : not0000000000001/Y
+    12: not0000000000001/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    13: not0000000000001/i_0/I0 (LUT1)
+      : not0000000000001/X
+      : not0000000000000/Y
+    14: not0000000000000/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    15: not0000000000000/i_0/I0 (LUT1)
+      : not0000000000000/X
+    16: i_8/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:850]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_8"
+Found timing loop:
+     0: i_9/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:907]
+     1: i_9/I0 (LUT2)
+      : not00000000000006/Y
+     2: not00000000000006/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     3: not00000000000006/i_0/I0 (LUT1)
+      : not00000000000006/X
+      : not00000000000005/Y
+     4: not00000000000005/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     5: not00000000000005/i_0/I0 (LUT1)
+      : not00000000000005/X
+      : not00000000000004/Y
+     6: not00000000000004/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     7: not00000000000004/i_0/I0 (LUT1)
+      : not00000000000004/X
+      : not00000000000003/Y
+     8: not00000000000003/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     9: not00000000000003/i_0/I0 (LUT1)
+      : not00000000000003/X
+      : not00000000000002/Y
+    10: not00000000000002/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    11: not00000000000002/i_0/I0 (LUT1)
+      : not00000000000002/X
+      : not00000000000001/Y
+    12: not00000000000001/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    13: not00000000000001/i_0/I0 (LUT1)
+      : not00000000000001/X
+      : not00000000000000/Y
+    14: not00000000000000/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    15: not00000000000000/i_0/I0 (LUT1)
+      : not00000000000000/X
+    16: i_9/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:907]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_9"
+Found timing loop:
+     0: i_10/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:964]
+     1: i_10/I0 (LUT2)
+      : not000000000000006/Y
+     2: not000000000000006/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     3: not000000000000006/i_0/I0 (LUT1)
+      : not000000000000006/X
+      : not000000000000005/Y
+     4: not000000000000005/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     5: not000000000000005/i_0/I0 (LUT1)
+      : not000000000000005/X
+      : not000000000000004/Y
+     6: not000000000000004/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     7: not000000000000004/i_0/I0 (LUT1)
+      : not000000000000004/X
+      : not000000000000003/Y
+     8: not000000000000003/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     9: not000000000000003/i_0/I0 (LUT1)
+      : not000000000000003/X
+      : not000000000000002/Y
+    10: not000000000000002/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    11: not000000000000002/i_0/I0 (LUT1)
+      : not000000000000002/X
+      : not000000000000001/Y
+    12: not000000000000001/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    13: not000000000000001/i_0/I0 (LUT1)
+      : not000000000000001/X
+      : not000000000000000/Y
+    14: not000000000000000/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    15: not000000000000000/i_0/I0 (LUT1)
+      : not000000000000000/X
+    16: i_10/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:964]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_10"
+Found timing loop:
+     0: i_11/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:1022]
+     1: i_11/I0 (LUT2)
+      : not0000000000000006/Y
+     2: not0000000000000006/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     3: not0000000000000006/i_0/I0 (LUT1)
+      : not0000000000000006/X
+      : not0000000000000005/Y
+     4: not0000000000000005/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     5: not0000000000000005/i_0/I0 (LUT1)
+      : not0000000000000005/X
+      : not0000000000000004/Y
+     6: not0000000000000004/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     7: not0000000000000004/i_0/I0 (LUT1)
+      : not0000000000000004/X
+      : not0000000000000003/Y
+     8: not0000000000000003/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     9: not0000000000000003/i_0/I0 (LUT1)
+      : not0000000000000003/X
+      : not0000000000000002/Y
+    10: not0000000000000002/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    11: not0000000000000002/i_0/I0 (LUT1)
+      : not0000000000000002/X
+      : not0000000000000001/Y
+    12: not0000000000000001/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    13: not0000000000000001/i_0/I0 (LUT1)
+      : not0000000000000001/X
+      : not0000000000000000/Y
+    14: not0000000000000000/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    15: not0000000000000000/i_0/I0 (LUT1)
+      : not0000000000000000/X
+    16: i_11/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:1022]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_11"
+Found timing loop:
+     0: i_12/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:1079]
+     1: i_12/I0 (LUT2)
+      : not00000000000000006/Y
+     2: not00000000000000006/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     3: not00000000000000006/i_0/I0 (LUT1)
+      : not00000000000000006/X
+      : not00000000000000005/Y
+     4: not00000000000000005/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     5: not00000000000000005/i_0/I0 (LUT1)
+      : not00000000000000005/X
+      : not00000000000000004/Y
+     6: not00000000000000004/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     7: not00000000000000004/i_0/I0 (LUT1)
+      : not00000000000000004/X
+      : not00000000000000003/Y
+     8: not00000000000000003/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     9: not00000000000000003/i_0/I0 (LUT1)
+      : not00000000000000003/X
+      : not00000000000000002/Y
+    10: not00000000000000002/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    11: not00000000000000002/i_0/I0 (LUT1)
+      : not00000000000000002/X
+      : not00000000000000001/Y
+    12: not00000000000000001/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    13: not00000000000000001/i_0/I0 (LUT1)
+      : not00000000000000001/X
+      : not00000000000000000/Y
+    14: not00000000000000000/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    15: not00000000000000000/i_0/I0 (LUT1)
+      : not00000000000000000/X
+    16: i_12/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:1079]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_12"
+Found timing loop:
+     0: i_13/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:1136]
+     1: i_13/I0 (LUT2)
+      : not000000000000000006/Y
+     2: not000000000000000006/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     3: not000000000000000006/i_0/I0 (LUT1)
+      : not000000000000000006/X
+      : not000000000000000005/Y
+     4: not000000000000000005/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     5: not000000000000000005/i_0/I0 (LUT1)
+      : not000000000000000005/X
+      : not000000000000000004/Y
+     6: not000000000000000004/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     7: not000000000000000004/i_0/I0 (LUT1)
+      : not000000000000000004/X
+      : not000000000000000003/Y
+     8: not000000000000000003/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     9: not000000000000000003/i_0/I0 (LUT1)
+      : not000000000000000003/X
+      : not000000000000000002/Y
+    10: not000000000000000002/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    11: not000000000000000002/i_0/I0 (LUT1)
+      : not000000000000000002/X
+      : not000000000000000001/Y
+    12: not000000000000000001/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    13: not000000000000000001/i_0/I0 (LUT1)
+      : not000000000000000001/X
+      : not000000000000000000/Y
+    14: not000000000000000000/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    15: not000000000000000000/i_0/I0 (LUT1)
+      : not000000000000000000/X
+    16: i_13/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:1136]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_13"
+Found timing loop:
+     0: i_14/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:1193]
+     1: i_14/I0 (LUT2)
+      : not0000000000000000006/Y
+     2: not0000000000000000006/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     3: not0000000000000000006/i_0/I0 (LUT1)
+      : not0000000000000000006/X
+      : not0000000000000000005/Y
+     4: not0000000000000000005/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     5: not0000000000000000005/i_0/I0 (LUT1)
+      : not0000000000000000005/X
+      : not0000000000000000004/Y
+     6: not0000000000000000004/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     7: not0000000000000000004/i_0/I0 (LUT1)
+      : not0000000000000000004/X
+      : not0000000000000000003/Y
+     8: not0000000000000000003/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     9: not0000000000000000003/i_0/I0 (LUT1)
+      : not0000000000000000003/X
+      : not0000000000000000002/Y
+    10: not0000000000000000002/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    11: not0000000000000000002/i_0/I0 (LUT1)
+      : not0000000000000000002/X
+      : not0000000000000000001/Y
+    12: not0000000000000000001/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    13: not0000000000000000001/i_0/I0 (LUT1)
+      : not0000000000000000001/X
+      : not0000000000000000000/Y
+    14: not0000000000000000000/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    15: not0000000000000000000/i_0/I0 (LUT1)
+      : not0000000000000000000/X
+    16: i_14/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:1193]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_14"
+Found timing loop:
+     0: i_15/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:1250]
+     1: i_15/I0 (LUT2)
+      : not00000000000000000006/Y
+     2: not00000000000000000006/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     3: not00000000000000000006/i_0/I0 (LUT1)
+      : not00000000000000000006/X
+      : not00000000000000000005/Y
+     4: not00000000000000000005/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     5: not00000000000000000005/i_0/I0 (LUT1)
+      : not00000000000000000005/X
+      : not00000000000000000004/Y
+     6: not00000000000000000004/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     7: not00000000000000000004/i_0/I0 (LUT1)
+      : not00000000000000000004/X
+      : not00000000000000000003/Y
+     8: not00000000000000000003/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+     9: not00000000000000000003/i_0/I0 (LUT1)
+      : not00000000000000000003/X
+      : not00000000000000000002/Y
+    10: not00000000000000000002/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    11: not00000000000000000002/i_0/I0 (LUT1)
+      : not00000000000000000002/X
+      : not00000000000000000001/Y
+    12: not00000000000000000001/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    13: not00000000000000000001/i_0/I0 (LUT1)
+      : not00000000000000000001/X
+      : not00000000000000000000/Y
+    14: not00000000000000000000/i_0/O (LUT1)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:29]
+    15: not00000000000000000000/i_0/I0 (LUT1)
+      : not00000000000000000000/X
+    16: i_15/O (LUT2)
+      [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v:1250]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_15"
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2733.180 ; gain = 626.270 ; free physical = 368305 ; free virtual = 498987
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1910.699; parent = 1720.576; children = 190.700
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3699.578; parent = 2701.168; children = 998.410
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2732.215 ; gain = 627.301 ; free physical = 308041 ; free virtual = 445248
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1902.164; parent = 1712.830; children = 189.845
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3698.609; parent = 2700.203; children = 998.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -165,49 +1363,49 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2733.180 ; gain = 626.270 ; free physical = 368304 ; free virtual = 498986
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1910.855; parent = 1720.732; children = 190.700
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3699.578; parent = 2701.168; children = 998.410
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2732.215 ; gain = 627.301 ; free physical = 308037 ; free virtual = 445244
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1902.344; parent = 1713.010; children = 189.845
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3698.609; parent = 2700.203; children = 998.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2733.180 ; gain = 626.270 ; free physical = 368304 ; free virtual = 498986
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1910.871; parent = 1720.748; children = 190.700
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3699.578; parent = 2701.168; children = 998.410
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2732.215 ; gain = 627.301 ; free physical = 308037 ; free virtual = 445244
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1902.359; parent = 1713.025; children = 189.845
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3698.609; parent = 2700.203; children = 998.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2733.180 ; gain = 626.270 ; free physical = 368304 ; free virtual = 498986
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1910.891; parent = 1720.768; children = 190.700
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3699.578; parent = 2701.168; children = 998.410
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2732.215 ; gain = 627.301 ; free physical = 308037 ; free virtual = 445244
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1902.375; parent = 1713.041; children = 189.845
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3698.609; parent = 2700.203; children = 998.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2733.180 ; gain = 626.270 ; free physical = 368304 ; free virtual = 498986
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1910.891; parent = 1720.768; children = 190.700
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3699.578; parent = 2701.168; children = 998.410
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2732.215 ; gain = 627.301 ; free physical = 308037 ; free virtual = 445244
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1902.375; parent = 1713.041; children = 189.845
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3698.609; parent = 2700.203; children = 998.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2733.180 ; gain = 626.270 ; free physical = 368304 ; free virtual = 498986
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1910.891; parent = 1720.768; children = 190.700
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3699.578; parent = 2701.168; children = 998.410
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2732.215 ; gain = 627.301 ; free physical = 308037 ; free virtual = 445244
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1902.375; parent = 1713.041; children = 189.845
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3698.609; parent = 2700.203; children = 998.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2733.180 ; gain = 626.270 ; free physical = 368304 ; free virtual = 498986
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1910.906; parent = 1720.783; children = 190.700
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3699.578; parent = 2701.168; children = 998.410
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2732.215 ; gain = 627.301 ; free physical = 308037 ; free virtual = 445244
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1902.391; parent = 1713.057; children = 189.845
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3698.609; parent = 2700.203; children = 998.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -220,35 +1418,44 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+-----+------+
-|      |Cell |Count |
-+------+-----+------+
-|1     |LUT1 |   146|
-|2     |LUT2 |    20|
-|3     |IBUF |     5|
-|4     |OBUF |    25|
-+------+-----+------+
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |LUT1    |   148|
+|3     |LUT2    |    21|
+|4     |LUT3    |     1|
+|5     |LUT4    |     1|
+|6     |FDRE    |     4|
+|7     |IBUF    |     6|
+|8     |IBUFGDS |     1|
+|9     |OBUF    |    30|
++------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2733.180 ; gain = 626.270 ; free physical = 368304 ; free virtual = 498986
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1910.938; parent = 1720.814; children = 190.700
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3699.578; parent = 2701.168; children = 998.410
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2732.215 ; gain = 627.301 ; free physical = 308037 ; free virtual = 445244
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1902.422; parent = 1713.088; children = 189.845
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3698.609; parent = 2700.203; children = 998.406
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2733.180 ; gain = 466.520 ; free physical = 368357 ; free virtual = 499039
-Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2733.180 ; gain = 626.270 ; free physical = 368357 ; free virtual = 499039
+Synthesis finished with 0 errors, 20 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2732.215 ; gain = 463.551 ; free physical = 308102 ; free virtual = 445309
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2732.215 ; gain = 627.301 ; free physical = 308102 ; free virtual = 445309
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2733.180 ; gain = 0.000 ; free physical = 368475 ; free virtual = 499157
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2732.215 ; gain = 0.000 ; free physical = 308098 ; free virtual = 445304
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2733.180 ; gain = 0.000 ; free physical = 368418 ; free virtual = 499100
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2732.215 ; gain = 0.000 ; free physical = 308143 ; free virtual = 445350
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 1 instances were transformed.
+  IBUFGDS => IBUFDS: 1 instance 
 
-Synth Design complete, checksum: 697f745b
+Synth Design complete, checksum: 8239a9c1
 INFO: [Common 17-83] Releasing license: Synthesis
-25 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+32 Infos, 4 Warnings, 21 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 2733.180 ; gain = 996.133 ; free physical = 368609 ; free virtual = 499291
-INFO: [Common 17-1381] The checkpoint '/home/mitrelab/VivadoProjects/Genesys2_RO/Genesys2_RO.runs/synth_1/ringoscillator.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2732.215 ; gain = 997.195 ; free physical = 308332 ; free virtual = 445539
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint '/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.runs/synth_1/ringoscillator.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file ringoscillator_utilization_synth.rpt -pb ringoscillator_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Oct 26 13:58:02 2022...
+INFO: [Common 17-206] Exiting Vivado at Fri Nov  4 13:35:32 2022...

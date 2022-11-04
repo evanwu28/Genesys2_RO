@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/mitrelab/VivadoProjects/Genesys2_RO/Genesys2_RO.runs/synth_1/ringoscillator.tcl"
+  variable script "/home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.runs/synth_1/ringoscillator.tcl"
   variable category "vivado_synth"
 }
 
@@ -78,19 +78,17 @@ create_project -in_memory -part xc7k325tffg900-2
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /home/mitrelab/VivadoProjects/Genesys2_RO/Genesys2_RO.cache/wt [current_project]
-set_property parent.project_path /home/mitrelab/VivadoProjects/Genesys2_RO/Genesys2_RO.xpr [current_project]
+set_property webtalk.parent_dir /home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.cache/wt [current_project]
+set_property parent.project_path /home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property board_part_repo_paths {/home/mitrelab/.Xilinx/Vivado/2022.2/xhub/board_store/xilinx_board_store} [current_project]
-set_property board_part digilentinc.com:genesys2:part0:1.1 [current_project]
-set_property ip_output_repo /home/mitrelab/VivadoProjects/Genesys2_RO/Genesys2_RO.cache/ip [current_project]
+set_property ip_output_repo /home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  /home/mitrelab/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v
-  /home/mitrelab/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v
+  /home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/notgate.v
+  /home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/sources_1/new/ringoscillator.v
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -101,12 +99,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/mitrelab/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/constrs_1/new/Genesys2_Master.xdc
-set_property used_in_implementation false [get_files /home/mitrelab/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/constrs_1/new/Genesys2_Master.xdc]
+read_xdc /home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/constrs_1/new/Genesys2_Master.xdc
+set_property used_in_implementation false [get_files /home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/constrs_1/new/Genesys2_Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental /home/mitrelab/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/utils_1/imports/synth_1/ringoscillator.dcp
+read_checkpoint -auto_incremental -incremental /home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.srcs/utils_1/imports/synth_1/ringoscillator.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

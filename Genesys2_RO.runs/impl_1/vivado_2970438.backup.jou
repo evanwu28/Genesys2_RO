@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Nov  4 12:37:24 2022
+# Process ID: 2970438
+# Current directory: /home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.runs/impl_1
+# Command line: vivado -log ringoscillator.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ringoscillator.tcl -notrace
+# Log file: /home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.runs/impl_1/ringoscillator.vdi
+# Journal file: /home/dev/VivadoProjects/Genesys2_RO/Genesys2_RO.runs/impl_1/vivado.jou
+# Running On: Vernamlab-Dev, OS: Linux, CPU Frequency: 3000.000 MHz, CPU Physical cores: 18, Host memory: 540518 MB
+#-----------------------------------------------------------
+source ringoscillator.tcl -notrace
